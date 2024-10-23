@@ -28,7 +28,7 @@ height: 1px;
 }
 header nav ul{
 display: flex;
-margin-left: 60%;
+margin-left: none;
 list-style: none;
 }
 
