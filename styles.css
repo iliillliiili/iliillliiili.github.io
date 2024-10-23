@@ -28,12 +28,12 @@ height: 1px;
 }
 header nav ul{
 display: flex;
-margin-left: 70%;
+margin-left: 60%;
 list-style: none;
 }
 
 header nav ul li{
-padding-left: 5%;
+padding-left: 3%;
 }
 
 header a{
@@ -62,7 +62,7 @@ ul.fun-facts {
 }
 
 .small {
-    font-size: 0.7em;  
+    font-size: 0.6875rem; /*0.7em;*/  
 	font-family: 'Arial';
 }
 
@@ -74,15 +74,16 @@ font-size: 1rem;
 }
 
 .special-text {
-    font-size: 18px;
+    font-size: 1.125rem; 
 	color: white;
 	font-style: italic;
 	font-weight: bold;
 	margin:0;
    }
+/*1.125rem; = 18px */
 	
 .indented {
-	text-indent: 50px; 
+	text-indent: 3.125rem; 
 }
 	
 .spaced {
@@ -91,7 +92,7 @@ font-size: 1rem;
 }
 	
 .new-line {
-     margin-top: 20px;
+     margin-top: 1.25rem;
 	 }
 
 
@@ -109,7 +110,7 @@ font-size: 1rem;
 }
 			
 .email {
-	font-size: 14px; 
+	font-size: 0.75rem;
 	font-style: italic; 
 	font-weight: bold; 
 	font-family:'Arial';
@@ -130,14 +131,14 @@ font-size: 1rem;
 }
 
 .video-description {
-    font-size: 10px;
+    font-size: 0.625rem;
 	color: white; 
     margin-top: 1px;
 	font-family:'Arial';
 }
 
 .video-alt-name {
-    font-size: 10px;
+    font-size: 0.625rem;
 	color: white; 
     margin-top: 1px;
 	font-family:'Arial';
@@ -145,7 +146,7 @@ font-size: 1rem;
 }
 
 .video-name {
-    font-size: 16px;
+    font-size: 1rem;
 	color: white; 
     margin-top: 15px;
 	font-weight: bold;
@@ -153,7 +154,7 @@ font-size: 1rem;
 }
 
 .video-description-big {
-    font-size: 12px;
+    font-size:  0.75rem;
 	color: white; 
     margin-top: 1px;
 	font-family:'Arial';
@@ -164,4 +165,8 @@ font-size: 1rem;
 	padding: 10px;
 	background-color: black;
 	border-radius: 4px;
+}
+
+.right-align {
+    text-align: right; 
 }
