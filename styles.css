@@ -8,6 +8,8 @@ header, footer {
     border: none;
     background-color: black; 
 	margin-bottom: 3%;
+	font-weight: bold;
+	font-family: 'Arial';
 }
 
 nav ul {
@@ -84,7 +86,7 @@ font-size: 1rem;
 /*1.125rem; = 18px */
 	
 .indented {
-	text-indent: 3.125rem; 
+	text-indent: 5%; 
 }
 	
 .spaced {
@@ -173,9 +175,6 @@ font-size: 1rem;
 }
 
 
-.your-element {
-    text-align: center; /* or whatever default alignment you want */
-}
 
 /* Styles for mobile devices */
 @media only screen and (max-width: 600px) { /* Adjust the max-width value as needed */
@@ -190,4 +189,7 @@ font-size: 1rem;
         flex-direction: column; /* Optional: Adjust navigation layout */
     }
 	
+	.video-description br {
+        display: none; /* Hide <br> elements */
+    }
 }
