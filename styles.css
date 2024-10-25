@@ -23,7 +23,8 @@ nav a {
 
 body {
 	background-color: black;
-	color: white;	
+	color: white;
+	
 }
 
 header{
@@ -33,10 +34,12 @@ header nav ul{
 display: flex;
 margin-left: none;
 list-style: none;
+justify-content: center;        
+           
 }
 
 header nav ul li{
-padding-left: 3%;
+ padding: 0 1rem; 
 }
 
 header a{
@@ -65,7 +68,7 @@ ul.fun-facts {
 }
 
 .small {
-    font-size: 0.6875rem; /*0.7em;*/  
+    font-size: 0.675rem;
 	font-family: 'Arial';
 }
 
@@ -113,7 +116,7 @@ font-size: 1rem;
 }
 			
 .email {
-	font-size: 0.75rem;
+	font-size: 0.9rem;
 	font-style: italic; 
 	font-weight: bold; 
 	font-family:'Arial';
@@ -173,6 +176,30 @@ font-size: 1rem;
 .left-align {
     text-align: left; 
 }
+
+.linkedin-container{
+	text-align: center; 
+}
+
+.linkedin-link {
+    text-decoration: none;
+    color: #0A66C2; /* LinkedIn Blue */
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* space between logo and text */
+}
+
+.linkedin-link:hover {
+    color: #005582; /* Darker blue on hover */
+}
+
+.linkedin-logo {
+    width: 80px; 
+    height: 80px; 
+}
+
 
 
 
