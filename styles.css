@@ -162,8 +162,11 @@ font-size: 1rem;
 .video-description-big {
     font-size:  0.75rem;
 	color: white; 
-    margin-top: 1px;
-	font-family:'Arial';
+ 	font-family:'Arial';
+}
+
+.margin-bottom {
+    margin-bottom: 0.5rem; 
 }
 
 .wrapper{
@@ -171,6 +174,8 @@ font-size: 1rem;
 	padding: 10px;
 	background-color: black;
 	border-radius: 4px;
+	width: auto; 
+    max-width: 100%;
 }
 
 .left-align {
@@ -198,6 +203,67 @@ font-size: 1rem;
 .linkedin-logo {
     width: 80px; 
     height: 80px; 
+}
+
+
+
+.audio-control {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin-top: 10px;
+	
+}
+
+.audio-control button{
+	background-color: #000; /*black */
+	color: #fff; /*white */
+	border: none;
+	padding: 2px 4px;
+    border-radius: none;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s;
+}
+
+.audio-control button:hover {
+    background-color: #666; /* Darker */
+}
+
+.audio-time {
+    font-size: 0.8rem; 
+    color: #f0f0f0; 
+    margin: 0 2px; 
+    text-align: center;
+}
+
+
+
+.seek-bar {
+    -webkit-appearance: none; /* Remove default styling */
+    width: 100px; 
+    height: 5px; 
+    background: #D3D3D3; 
+    border-radius: 5px; 
+    cursor: pointer;
+}
+
+
+	
+.seek-bar::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Remove default styling */
+    appearance: none; /* Remove default styling */
+    width: 12px;
+    height: 12px; 
+    background: #fff; /* Color of the thumb */
+    border-radius: 50%; 	
+}
+
+.seek-bar::-moz-range-thumb {
+    width: 12px; /* Custom width for Firefox */
+    height: 12px; 
+    background: #fff; 
+    border-radius: 50%; 
 }
 
 
