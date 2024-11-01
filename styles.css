@@ -296,7 +296,16 @@ font-size: 0.8rem;
 
 /* Styles for mobile devices */
 @media only screen and (max-width: 600px) { 
-    .your-element {
+    
+	body {
+        font-size: 0.875rem;
+    }
+	
+	 .small {
+        font-size: 0.5rem; 
+    }
+	
+	.your-element {
         text-align: left;
     }
 	.container {
@@ -309,12 +318,14 @@ font-size: 0.8rem;
     }
 	
 	header nav ul li {
-        padding: 0.5rem 0.75rem; 
+        padding: 0.3rem 0.45rem; 
     }
 	
 	header {
         padding: 10px; /* Optional padding */
     }
+	
+		
 	/*
 	.video-description br {
         display: none; /* Hide <br> elements */
