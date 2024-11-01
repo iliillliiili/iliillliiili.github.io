@@ -230,8 +230,6 @@ font-size: 0.8rem;
     height: 80px; 
 }
 
-
-
 .audio-control {
 	display: flex;
 	align-items: center;
@@ -297,14 +295,24 @@ font-size: 0.8rem;
 /* Styles for mobile devices */
 @media only screen and (max-width: 600px) { 
     
-	body {
-        font-size: 0.875rem;
-    }
+	
 	
 	 .small {
         font-size: 0.5rem; 
     }
 	
+	.video-name {
+		font-size: 0.7rem;
+	}
+	
+	.video-description-big {
+		font-size: 0.6rem;
+	}
+	
+	.video-alt-name, .video-description {
+		font-size: 0.55rem;
+	}
+		
 	.your-element {
         text-align: left;
     }
