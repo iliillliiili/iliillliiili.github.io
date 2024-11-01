@@ -304,7 +304,8 @@ font-size: 0.8rem;
     }
 	
 	header nav ul {
-        flex-direction: column; /* Adjust navigation layout */
+        flex-direction: column; /* Align items vertically */
+		align-items: center; /* Center items horizontally */
     }
 	/*
 	.video-description br {
