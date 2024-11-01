@@ -304,7 +304,7 @@ font-size: 0.8rem;
     }
 	
 	header nav ul {
-        flex-direction: row; /* Align items vertically */
+        flex-direction: column; /* Align items vertically */
 		align-items: center; /* Center items horizontally */
     }
 	/*
