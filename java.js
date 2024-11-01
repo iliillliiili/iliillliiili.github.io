@@ -58,6 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
 				const time = parseInt(this.getAttribute('data-time'));
 				audio.currentTime = time; 
 				audio.play(); 
+				playPauseButton.textContent = '❚❚';
 			});
 		});
 	
