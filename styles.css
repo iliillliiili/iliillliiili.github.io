@@ -347,5 +347,5 @@ font-size: 0.8rem;
 }
 
 .clickable-image:hover {
-    transform: scale(1.07); /* Enlarge image on hover */
+    transform: scale(1.05); /* Enlarge image on hover */
 }
