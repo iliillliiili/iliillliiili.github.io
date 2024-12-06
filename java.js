@@ -47,7 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 		
 		clickableImage.addEventListener('click', () => {
-			console.log("Play/Pause button clicked");
+			console.log("Image clicked");
             if (audio.paused) {
                 audio.play();
                 playPauseButton.textContent = '❚❚'; //pause
