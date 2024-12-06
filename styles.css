@@ -340,3 +340,12 @@ font-size: 0.8rem;
     }
 	*/
 }
+
+.clickable-image {
+    transition: transform 0.2s;
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+.clickable-image:hover {
+    transform: scale(1.07); /* Enlarge image on hover */
+}

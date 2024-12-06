@@ -1,3 +1,4 @@
+/*
 document.addEventListener('DOMContentLoaded', function () {
     const videos = document.querySelectorAll('.myVideo');
 
@@ -15,6 +16,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 });
+*/
 
 document.addEventListener('DOMContentLoaded', function () {
     const audioPlayers = document.querySelectorAll('.myAudio'); 
@@ -24,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const seekBar = audio.closest('.wrapper').querySelector('.seek-bar');
         const currentTimeDisplay = audio.closest('.wrapper').querySelector('.audio-time');
         const durationDisplay = audio.closest('.wrapper').querySelector('#duration'); 
+		const clickableImage = audio.closest('.wrapper').querySelector('.clickable-image');
 
         audio.addEventListener('loadedmetadata', () => {
             const duration = audio.duration;
@@ -31,6 +34,7 @@ document.addEventListener('DOMContentLoaded', function () {
             seekBar.max = duration;
         });
 
+/*
         playPauseButton.addEventListener('click', () => {
 			console.log("Play/Pause button clicked");
             if (audio.paused) {
@@ -41,6 +45,32 @@ document.addEventListener('DOMContentLoaded', function () {
                 playPauseButton.textContent = '▶'; //play
             }
         });
+		
+		clickableImage.addEventListener('click', () => {
+			console.log("Play/Pause button clicked");
+            if (audio.paused) {
+                audio.play();
+                playPauseButton.textContent = '❚❚'; //pause
+            } else {
+                audio.pause();
+                playPauseButton.textContent = '▶'; //play
+            }
+        });
+*/
+		
+		function togglePlayPause() {
+            if (audio.paused) {
+                audio.play();
+                playPauseButton.textContent = '❚❚'; // Pause 
+            } else {
+                audio.pause();
+                playPauseButton.textContent = '▶'; // Play 
+            }
+        }
+		
+		playPauseButton.addEventListener('click', togglePlayPause);
+		clickableImage.addEventListener('click', togglePlayPause);
+
 
         audio.addEventListener('timeupdate', () => {
             currentTimeDisplay.textContent = formatTime(audio.currentTime);
