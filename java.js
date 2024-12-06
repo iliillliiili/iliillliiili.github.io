@@ -32,6 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         playPauseButton.addEventListener('click', () => {
+			console.log("Play/Pause button clicked");
             if (audio.paused) {
                 audio.play();
                 playPauseButton.textContent = '❚❚'; //pause
