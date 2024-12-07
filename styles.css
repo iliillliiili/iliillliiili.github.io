@@ -42,8 +42,9 @@ header nav ul{
 display: flex;
 margin-left: none;
 list-style: none;
-justify-content: center;        
-           
+justify-content: center;  
+-ms-flex-wrap: wrap; /* IE10+ */      
+flex-wrap: wrap;         
 }
 
 header nav ul li{
@@ -76,11 +77,13 @@ section{
 min-height: 100vh;
 border: none; /*1px solid black;*/
 display: flex;
-justify-content: center;
 align-items: center;
+justify-content: center;
+
+
+-ms-flex-align: center; /* IE10+ */
+-ms-flex-pack: center; /* IE10+ */
 }
-
-
 
 .container p, ul{
 margin-top: 2%;
@@ -95,6 +98,16 @@ ul.fun-facts {
 .small {
     font-size: 0.675rem;
 	font-family: 'Arial';
+}
+
+.human {
+    font-size: 0.7rem;
+	color: #B76E4C;
+	font-weight: 900;
+	font-family: 'Arial Black';
+	text-indent: 5%;
+	margin-top: 20px;
+	margin-bottom: -12px;
 }
 
 footer {
@@ -152,6 +165,7 @@ font-size: 0.8rem;
 .video-container {
     display: flex;
     flex-direction: column; 
+	-ms-flex-direction: column; /* IE10+ */
     align-items: center;
     margin-top: 10px; 
 }
@@ -218,7 +232,8 @@ font-size: 0.8rem;
     font-weight: bold;
     display: flex;
     align-items: center;
-    gap: 1rem; /* space between logo and text */
+    gap: 1rem; /* Space between logo and text */
+	margin-right: 1rem; /* Adjust space between logo and text manually*/
 }
 
 .linkedin-link:hover {
@@ -359,4 +374,18 @@ font-size: 0.8rem;
     overflow: hidden;
     clip: rect(0, 0, 0, 0);
     border: 0;
+}
+
+.divider40{
+	height: 40px	
+}
+
+.divider20{
+	height: 20px	
+}
+
+.bio-container{
+	max-width: 600px; 
+	margin: 0 auto; /* Center the container */
+	padding: 0 10px;
 }
