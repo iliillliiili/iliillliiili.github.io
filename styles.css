@@ -101,7 +101,7 @@ ul.fun-facts {
 }
 
 .human {
-    font-size: 0.7rem;
+    font-size: 1rem;
 	color: #B76E4C;
 	font-weight: 900;
 	font-family: 'Arial Black';
@@ -311,7 +311,7 @@ font-size: 0.8rem;
 @media only screen and (max-width: 600px) { 
     
 	.human {
-    font-size: 0.4rem;
+    font-size: 0.8rem;
 	}
 	
 	 .small {
