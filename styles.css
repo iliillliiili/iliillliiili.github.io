@@ -152,6 +152,12 @@ font-size: 0.8rem;
 	margin-bottom: 10px;
 	border-radius: 0;
 }
+
+.mantoren-image {
+    max-width: 100%; 
+    height: auto;
+    object-fit: cover;
+}
 			
 .email {
 	font-size: 0.9rem;
