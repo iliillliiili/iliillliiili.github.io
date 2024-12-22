@@ -154,8 +154,8 @@ font-size: 0.8rem;
 }
 
 .mantoren-image {
-    width: 283px;
-    height: 370px;
+    width: 283px !important;
+    height: 370px!important;
     object-fit: cover;
 }
 			
