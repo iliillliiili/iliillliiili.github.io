@@ -235,9 +235,9 @@ font-size: 0.8rem;
     font-size: 0.8rem;
     font-weight: bold;
     display: flex;
-    align-items: center;
-    gap: 1rem; /* Space between logo and text */
-	margin-right: 1rem; /* Adjust space between logo and text manually*/
+    /*align-items: center;/*
+    /*gap: 1rem;  Space between logo and text /*
+	/* margin-right: 1rem; Adjust space between logo and text manually*/
 }
 
 .linkedin-link:hover {
