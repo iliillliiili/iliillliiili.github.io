@@ -92,7 +92,7 @@ margin-top: 2%;
 
 ul.fun-facts {
     list-style-type: none; 
-    padding-left: 5%; 
+    padding-left: 35%; 
 }
 
 .small {
@@ -391,7 +391,10 @@ font-size: 0.8rem;
 }
 
 .bio-container{
-	max-width: 600px; 
-	margin: 0 auto; /* Center the container */
+	max-width: 600px;
+	margin: 0 auto;
 	padding: 0 10px;
+	text-align: center;
+	
 }
+
