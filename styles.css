@@ -54,7 +54,8 @@ header nav ul li{
 header nav ul li a{
 padding: 15px 20px; 
 border-radius: 5px; 
-transition: background-color 0.3s; 
+transition: background-color 0.3s;
+touch-action: manipulation; 
 }
 
 
@@ -342,13 +343,21 @@ font-size: 0.8rem;
     }
 	
 	header nav ul {
-        flex-direction: row;
-		flex-wrap: wrap;
+		justify-content: space-around;
+		padding: 0;
+       
     }
 	
 	header nav ul li {
-        padding: 0.3rem 0.45rem; 
+        padding: 0; 
     }
+	
+	header nav ul li a {
+		padding: 10px 12px;
+		font-size: 0.8rem;
+		white-space: nowrap;
+		
+	}
 	
 	header {
         padding: 10px; /* Optional padding */
@@ -398,3 +407,18 @@ font-size: 0.8rem;
 	
 }
 
+@media (hover: none) {
+  header nav ul li:hover a {
+    background-color: transparent; /* Disable hover */
+  }
+}
+
+
+@media (max-width: 600px) {
+  header {
+    margin-bottom: 1%; 
+  }
+  .container {
+    margin: 5px;
+  }
+}
