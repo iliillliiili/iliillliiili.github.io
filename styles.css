@@ -389,9 +389,9 @@ font-size: 0.8rem;
 	.linkedin-logo { width: 60px; }
 		
 	ul.fun-facts {
-    padding-left: 10%;   /* Remove the huge offset */
-    margin-left: 0;    /* Reset margin */
-    text-align: left;  /* Keep text aligned neatly */
+    padding-left: 5%;   
+    margin-left: 0;    
+    text-align: left;  
 	}	
 		
 		
