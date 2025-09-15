@@ -389,13 +389,10 @@ font-size: 0.8rem;
 	.linkedin-logo { width: 60px; }
 		
 	ul.fun-facts {
-        padding-left: 0;         
-        font-family: monospace;  
-        white-space: pre;        
-        overflow-x: auto;      
-        font-size: 0.65rem;    
-        text-align: left;  
-    }
+    padding-left: 10%;   
+    margin-left: 0;    
+    text-align: left;  
+	}	
 		
 		
 	/*
