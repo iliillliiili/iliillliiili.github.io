@@ -101,13 +101,13 @@ document.addEventListener('DOMContentLoaded', function () {
         return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
     }
 
- const allImages = document.querySelectorAll('img');
-    allImages.forEach(img => {
-        img.addEventListener('contextmenu', (e) => {
-            e.preventDefault();
-            
-        });
-    });
+	const allImages = document.querySelectorAll('img');
+		allImages.forEach(img => {
+			img.addEventListener('contextmenu', (e) => {
+				e.preventDefault();
+				
+			});
+		});
 
 
 
