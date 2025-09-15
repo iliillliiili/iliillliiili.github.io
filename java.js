@@ -100,6 +100,17 @@ document.addEventListener('DOMContentLoaded', function () {
         const secs = Math.floor(seconds % 60);
         return `${minutes}:${secs < 10 ? '0' : ''}${secs}`;
     }
+
+ const allImages = document.querySelectorAll('img');
+    allImages.forEach(img => {
+        img.addEventListener('contextmenu', (e) => {
+            e.preventDefault();
+            
+        });
+    });
+
+
+
 });
 
 
