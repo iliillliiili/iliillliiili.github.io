@@ -392,8 +392,8 @@ font-size: 0.8rem;
     padding-left: 10%;   
     margin-left: 0;    
     text-align: left;  
-
-	white-space: pre;  
+	font-family: monospace;
+  
 	}	
 		
 		
