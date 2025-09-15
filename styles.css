@@ -93,7 +93,7 @@ margin-top: 2%;
 
 ul.fun-facts {
     list-style-type: none; 
-    padding-left: 35%; 
+    padding-left: 30%; 
 }
 
 .small {
@@ -387,6 +387,13 @@ font-size: 0.8rem;
 	}
 	
 	.linkedin-logo { width: 60px; }
+		
+	ul.fun-facts {
+    padding-left: 10%;   /* Remove the huge offset */
+    margin-left: 0;    /* Reset margin */
+    text-align: left;  /* Keep text aligned neatly */
+	}	
+		
 		
 	/*
 	.video-description br {
