@@ -148,7 +148,7 @@ font-size: 0.8rem;
 	
 .container img {
 	display: block; 
-	width: 100%; 
+	max-width: 100%;  
 	height: auto; 
 	margin-bottom: 10px;
 	border-radius: 0;
@@ -162,12 +162,17 @@ font-size: 0.8rem;
 
 			
 .email {
-	font-size: 0.9rem;
-	font-style: italic; 
-	font-weight: bold; 
-	font-family:'Arial';
-	margin: 0; 
-	display: flex;	
+  display: flex;  
+  align-items: center;   
+  flex-direction: column;
+  justify-content: center;  
+  gap: 0.5rem;           
+  margin-top: 0rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+  text-align: center;  
 }
 
 .video-container {
@@ -231,14 +236,14 @@ font-size: 0.8rem;
 
 
 .linkedin-link {
+	display: block;
+	margin: 0;
+	align-items: center;
     text-decoration: none;
     color: #0A66C2; /* LinkedIn Blue */
     font-size: 0.8rem;
     font-weight: bold;
-    display: flex;
-    /*align-items: center;/*
-    /*gap: 1rem;  Space between logo and text /*
-	/* margin-right: 1rem; Adjust space between logo and text manually*/
+
 }
 
 .linkedin-link:hover {
@@ -247,7 +252,14 @@ font-size: 0.8rem;
 
 .linkedin-logo {
     width: 80px; 
-    height: 80px; 
+    height: auto; 
+	display: block;
+	margin: 0 auto;   
+	
+}
+
+.email-text {
+    display: block;               
 }
 
 .audio-control {
@@ -363,10 +375,20 @@ font-size: 0.8rem;
         padding: 10px; /* Optional padding */
     }
 	
+	.profile-img { width: 70%; }
+	
+	.email {
+		display: flex;
+		flex-direction: column;
+		gap: 0.25rem;
+		align-items: center;
+	}
+	
+	.linkedin-logo { width: 60px; }
 		
 	/*
 	.video-description br {
-        display: none; /* Hide <br> elements */
+        display: none;  Hide <br> elements 
     }
 	*/
 }
@@ -421,4 +443,13 @@ font-size: 0.8rem;
   .container {
     margin: 5px;
   }
+}
+
+
+.profile-img {
+  display: block;        
+  margin: 0 auto;        
+  width: 40%;            
+  max-width: 600px;      
+  height: auto;
 }
