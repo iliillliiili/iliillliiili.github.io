@@ -387,7 +387,7 @@ font-size: 0.8rem;
   width: 35%;            
   max-width: 400px;      
   height: auto;
-  animation: effects 3s ease-in-out forwards;
+  animation: effects 5s ease-in-out forwards;
 }
 
 @keyframes effects {
@@ -475,7 +475,7 @@ font-size: 0.8rem;
 		align-items: center;
 	}
 	
-	.linkedin-logo { width: 60px; }
+	.linkedin-logo { width: 20px; }
 		
 	ul.fun-facts {
     padding-left: 15%;   
@@ -501,7 +501,16 @@ font-size: 0.8rem;
 	
 	.funfacts-title {
 		margin-top: 2rem; 
-		font-size: 0.8rem;  
+		font-size: 0.65rem;  
+	}
+	
+	
+	header {
+		margin-bottom: 1%; 
+	}
+	.container {
+		margin: 5px;
+		padding: 10px;
 	}
 	
 	
@@ -514,14 +523,4 @@ font-size: 0.8rem;
   }
 }
 
-
-@media (max-width: 600px) {
-  header {
-    margin-bottom: 1%; 
-  }
-  .container {
-    margin: 5px;
-	padding: 10px;
-  }
-}
 
