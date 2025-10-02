@@ -440,8 +440,8 @@ font-size: 0.8rem;
     }
 	
 	.profile-img { 
-		width: 70%; 
-		max-width: 100%;
+		width: 50%; 
+		max-width: 700%;
         height: auto;
 	}
 	
@@ -471,7 +471,7 @@ font-size: 0.8rem;
 	
 	 .bio-text {
         font-size: 0.6rem;
-        text-align: left;
+        text-align: center;
         padding: 0 10px;
     }
 	
