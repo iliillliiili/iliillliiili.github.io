@@ -144,6 +144,8 @@ font-size: 0.8rem;
 .container{
 	text-align: center;
 	margin: 20px;
+	max-width: 600px; 
+
 }
 	
 .container img {
@@ -162,18 +164,24 @@ font-size: 0.8rem;
 
 			
 .email {
-  display: flex;  
-  align-items: center;   
-  flex-direction: column;
-  justify-content: center;  
-  gap: 0.5rem;           
-  margin-top: 0rem;
-  font-size: 0.9rem;
-  font-style: italic;
-  font-weight: bold;
-  font-family: 'Arial', sans-serif;
-  text-align: center;  
+	 display: flex;  
+	 align-items: center;   
+	 flex-direction: column;
+	 justify-content: center;  
+	 gap: 0.5rem;           
+	 margin-top: 0rem;
+	 font-size: 0.9rem;
+	 font-weight: bold;
+	 font-family: 'Arial', sans-serif;
+	 text-align: center;  
 }
+
+.collab-line {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+	justify-content: center;
+}	
 
 .video-container {
     display: flex;
@@ -255,13 +263,14 @@ font-size: 0.8rem;
     width: 80px; 
     height: auto; 
 	display: block;
-	margin: 0 auto; 
+	margin: 0; 
 	object-fit: contain; 	
 	
 }
 
 .email-text {
-    display: block;               
+    display: block; 
+	font-style: italic;	
 }
 
 .audio-control {
@@ -323,10 +332,63 @@ font-size: 0.8rem;
     border-radius: 50%; 
 }
 
+.bio-text {
+	display: block; 
+    font-size: 0.9rem;
+    font-family: 'Arial';
+    line-height: 1.1;
+    max-width: 61%;      
+	text-align: center;
+    margin: 20px auto 0 auto;
+    padding: 0 10px;
+}
 
 
+.clickable-image {
+    transition: transform 0.2s;
+    cursor: pointer; /* Change cursor to pointer */
+}
 
-/* Styles for mobile devices */
+.clickable-image:hover {
+    transform: scale(1.05); /* Enlarge image on hover */
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.divider40{
+	height: 40px	
+}
+
+.divider20{
+	height: 20px	
+}
+
+.bio-container{
+	max-width: 600px;
+	margin: 0 auto;
+	padding: 0 10px;
+	text-align: center;
+	
+}
+
+.profile-img {
+  display: block;        
+  margin: 0 auto;        
+  width: 35%;            
+  max-width: 400px;      
+  height: auto;
+}
+
+/* mobile devices */
 @media only screen and (max-width: 600px) { 
     
 	.human {
@@ -374,10 +436,14 @@ font-size: 0.8rem;
 	}
 	
 	header {
-        padding: 10px; /* Optional padding */
+        padding: 10px;
     }
 	
-	.profile-img { width: 70%; }
+	.profile-img { 
+		width: 70%; 
+		max-width: 100%;
+        height: auto;
+	}
 	
 	.email {
 		display: flex;
@@ -402,43 +468,16 @@ font-size: 0.8rem;
         display: none;  Hide <br> elements 
     }
 	*/
-}
-
-.clickable-image {
-    transition: transform 0.2s;
-    cursor: pointer; /* Change cursor to pointer */
-}
-
-.clickable-image:hover {
-    transform: scale(1.05); /* Enlarge image on hover */
-}
-
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    border: 0;
-}
-
-.divider40{
-	height: 40px	
-}
-
-.divider20{
-	height: 20px	
-}
-
-.bio-container{
-	max-width: 600px;
-	margin: 0 auto;
-	padding: 0 10px;
-	text-align: center;
+	
+	 .bio-text {
+        font-size: 0.6rem;
+        text-align: left;
+        padding: 0 10px;
+    }
+	
 	
 }
+
 
 @media (hover: none) {
   header nav ul li:hover a {
@@ -453,14 +492,7 @@ font-size: 0.8rem;
   }
   .container {
     margin: 5px;
+	padding: 10px;
   }
 }
 
-
-.profile-img {
-  display: block;        
-  margin: 0 auto;        
-  width: 40%;            
-  max-width: 600px;      
-  height: auto;
-}
