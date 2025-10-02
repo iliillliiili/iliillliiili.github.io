@@ -387,10 +387,10 @@ font-size: 0.8rem;
   width: 35%;            
   max-width: 400px;      
   height: auto;
-  animation: dramaticIntro 3s ease-in-out forwards;
+  animation: effects 3s ease-in-out forwards;
 }
 
-@keyframes dramaticIntro {
+@keyframes effects {
   0% {
     filter:blur(1px)  brightness(1.1) contrast(150%) saturate(150%) sepia(30%) hue-rotate(220deg) grayscale(3%);
   }
