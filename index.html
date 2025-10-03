@@ -15,11 +15,15 @@
 	<body>
 		
 		<script>
-			if (!localStorage.getItem('hasVisited')) {
-			localStorage.setItem('hasVisited', 'true');
-			window.location.href = 'contact.html';
+			const today = new Date().toISOString().split('T')[0];
+			const lastVisit = localStorage.getItem('lastVisitDate');
+
+			if (lastVisit !== today) {
+				localStorage.setItem('lastVisitDate', today);
+				window.location.href = 'contact.html';
 			}
 		</script>
+
 	
 		<header>
 			<nav>
