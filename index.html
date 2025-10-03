@@ -13,6 +13,14 @@
 
 
 	<body>
+		
+		<script>
+			if (!localStorage.getItem('hasVisited')) {
+			localStorage.setItem('hasVisited', 'true');
+			window.location.href = 'contact.html';
+			}
+		</script>
+	
 		<header>
 			<nav>
 				<ul>
