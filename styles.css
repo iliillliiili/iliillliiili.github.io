@@ -179,6 +179,7 @@ font-size: 0.8rem;
 	align-items: center;
 	gap: 0.5rem;
 	justify-content: center;
+	font-size: 0.8rem;
 }	
 
 .video-container {
@@ -493,6 +494,10 @@ font-size: 0.8rem;
 	
 	header {
 		margin-bottom: 1%; 
+	}
+	
+	.collab-line {	
+		font-size: 0.5rem;
 	}
 	
 
