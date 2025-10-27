@@ -202,6 +202,13 @@ font-size: 0.8rem;
 	font-family:'Arial';
 }
 
+.instruments {
+    font-size: 0.495rem;
+	color: white; 
+    margin-top: 1px;
+	font-family:'Arial';
+}
+
 .video-alt-name {
     font-size: 0.625rem;
 	color: white; 
@@ -403,6 +410,28 @@ font-size: 0.8rem;
 	line-height: 1.5;
 }
 
+.toggle-components {
+	background: none;
+	border: none;
+	color: lightblue;
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	margin-left: 0.2rem;
+	transition: transform 0.2s ease-in-out;
+	
+}
+
+.toggle-components:hover, 
+.togle-components:focus {
+	transform: scale(1.2);
+	outline: 1px dashed lightblue;
+	outline-offset: 2px;
+}
+
+.hidden {
+	display: none;
+}
 
 /* mobile devices */
 @media only screen and (max-width: 600px) { 
@@ -425,6 +454,10 @@ font-size: 0.8rem;
 	
 	.video-alt-name, .video-description {
 		font-size: 0.55rem;
+	}
+	
+	.instruments {
+		font-size: 0.425rem;
 	}
 		
 	.your-element {

@@ -110,8 +110,17 @@ document.addEventListener('DOMContentLoaded', function () {
 		});
 
 
+	document.querySelectorAll('.toggle-components').forEach(button => {
+		button.addEventListener('click', () => {
+			const collapse = button.closest('.collapsible').querySelector('.collapsible-items');
+			const expanded = button.getAttribute('aria-expanded') === 'true';
+			
+			collapse.classList.toggle('hidden', expanded);
+			button.setAttribute('aria-expanded', !expanded);
+			button.textContent = expanded ? '+' : '–'; 
+		});
+
+	});
 
 });
-
-
 	
