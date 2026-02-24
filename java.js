@@ -1,64 +1,50 @@
-/*
-document.addEventListener('DOMContentLoaded', function () {
-    const videos = document.querySelectorAll('.myVideo');
 
-    videos.forEach(video => {
-        video.addEventListener('fullscreenchange', function () {
-            if (document.fullscreenElement) {
-                document.exitFullscreen();
-            }
-        });
-
-        video.addEventListener('play', function () {
-            if (document.fullscreenElement) {
-                document.exitFullscreen();
-            }
-        });
-    });
-});
-*/
 
 
 document.addEventListener('DOMContentLoaded', function () {
     const audioPlayers = document.querySelectorAll('.myAudio'); 
 
     audioPlayers.forEach((audio) => {
-        const playPauseButton = audio.closest('.wrapper').querySelector('.play-pause');
-        const seekBar = audio.closest('.wrapper').querySelector('.seek-bar');
-        const currentTimeDisplay = audio.closest('.wrapper').querySelector('.audio-time');
-        const durationDisplay = audio.closest('.wrapper').querySelector('#duration'); 
-		const clickableImage = audio.closest('.wrapper').querySelector('.clickable-image');
+        const wrapper = audio.closest('.wrapper, .multiple-wrapper-item');
+		const playPauseButton = wrapper.querySelector('.play-pause');
+		const seekBar = wrapper.querySelector('.seek-bar');
+		const currentTimeDisplay = wrapper.querySelector('.current-time');
+		const durationDisplay = wrapper.querySelector('.duration');
+		const clickableImage = wrapper.querySelector('.clickable-image');
 
         audio.addEventListener('loadedmetadata', () => {
             const duration = audio.duration;
             durationDisplay.textContent = formatTime(duration);
             seekBar.max = duration;
         });
+		
 
-/*
-        playPauseButton.addEventListener('click', () => {
-			console.log("Play/Pause button clicked");
-            if (audio.paused) {
-                audio.play();
-                playPauseButton.textContent = '❚❚'; //pause
-            } else {
-                audio.pause();
-                playPauseButton.textContent = '▶'; //play
-            }
-        });
+		function togglePlayPause() {
+
+			if (audio.paused) {
+
+				audioPlayers.forEach(otherAudio => {
+					if (otherAudio !== audio) {
+						otherAudio.pause();
+
+						const otherWrapper = otherAudio.closest('.wrapper, .multiple-wrapper-item');
+						const otherButton = otherWrapper.querySelector('.play-pause');
+						otherButton.textContent = '▶';
+					}
+				});
+
+				audio.play();
+				playPauseButton.textContent = '❚❚';
+
+			} else {
+				audio.pause();
+				playPauseButton.textContent = '▶';
+			}
+		}		
 		
-		clickableImage.addEventListener('click', () => {
-			console.log("Image clicked");
-            if (audio.paused) {
-                audio.play();
-                playPauseButton.textContent = '❚❚'; //pause
-            } else {
-                audio.pause();
-                playPauseButton.textContent = '▶'; //play
-            }
-        });
-*/
 		
+
+/* (play at the same time)		
 		function togglePlayPause() {
             if (audio.paused) {
                 audio.play();
@@ -68,6 +54,8 @@ document.addEventListener('DOMContentLoaded', function () {
                 playPauseButton.textContent = '▶'; // Play 
             }
         }
+		
+*/
 		
 		playPauseButton.addEventListener('click', togglePlayPause);
 		clickableImage.addEventListener('click', togglePlayPause);
@@ -83,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     
 	
-		const timestamps = audio.closest('.wrapper').querySelectorAll('.timestamp');
+		const timestamps = audio.closest('.wrapper, .multiple-wrapper-item').querySelectorAll('.timestamp');
 		timestamps.forEach(timestamp => {
 			timestamp.addEventListener('click', function (event) {
 				event.preventDefault(); 

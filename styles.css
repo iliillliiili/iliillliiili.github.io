@@ -423,7 +423,7 @@ font-size: 0.8rem;
 }
 
 .toggle-components:hover, 
-.togle-components:focus {
+.toggle-components:focus {
 	transform: scale(1.2);
 	outline: 1px dashed lightblue;
 	outline-offset: 2px;
@@ -432,6 +432,36 @@ font-size: 0.8rem;
 .hidden {
 	display: none;
 }
+
+.multiple-wrapper {
+	border: 2px solid white;
+	padding: 10px;
+	background-color: black;
+	border-radius: 4px;
+	width: auto; 
+    max-width: 80%;
+	width: fit-content;
+	margin: 0 auto;      
+}
+
+.multiple-wrapper-item {
+    padding: 5px;
+    text-align: center;
+    background: none; 
+}
+
+.multiple-wrapper-item img {
+    max-width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+
+.multiple-wrapper-item .seek-bar {
+    width: 30%; 
+}
+
+
+
 
 /* mobile devices */
 @media only screen and (max-width: 600px) { 
