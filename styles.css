@@ -568,9 +568,15 @@ font-size: 0.8rem;
 
 
 @media (hover: none) {
-  header nav ul li:hover a {
-    background-color: transparent; /* Disable hover */
-  }
+	header nav ul li:hover a {
+		background-color: transparent; /* Disable hover */
+	}
 }
 
+.container .email-img {
+	width: 180px;
+	max-width: 100%;
+	height: auto;
+	margin: 5px auto 0 auto
+}
 
